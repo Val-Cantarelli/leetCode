@@ -1,0 +1,24 @@
+# Gradle build outputs
+/build/
+/.gradle/
+
+# IntelliJ IDEA / JetBrains
+/.idea/
+*.iml
+/out/
+
+# Eclipse
+/.settings/
+/.project
+/.classpath
+/bin/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Generated JARs / libs
+/libs/
+
