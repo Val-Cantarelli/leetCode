@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="leetCode.DeleteDuplicationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-12-17T21:50:39.100Z" hostname="Mac.ht.home" time="0.009">
+  <properties/>
+  <testcase name="testSingleElement()" classname="leetCode.DeleteDuplicationTest" time="0.006"/>
+  <testcase name="testConsecutiveDuplicates()" classname="leetCode.DeleteDuplicationTest" time="0.0"/>
+  <testcase name="testEmptyList()" classname="leetCode.DeleteDuplicationTest" time="0.0"/>
+  <testcase name="testAllDuplicates()" classname="leetCode.DeleteDuplicationTest" time="0.0"/>
+  <testcase name="testMultipleDuplicates()" classname="leetCode.DeleteDuplicationTest" time="0.001"/>
+  <testcase name="testNoDuplicates()" classname="leetCode.DeleteDuplicationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
