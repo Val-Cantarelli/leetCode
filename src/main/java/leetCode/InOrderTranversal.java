@@ -1,24 +1,33 @@
 package leetCode;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.Stack;
 
-// Receive a root and returns a List<Integer> in -order transversal
+// Follow up: Recursive solution is trivial, could you do it iteratively?ok
+// Receive a root and return a List<Integer> inOrder transversal
 public class InOrderTranversal {
 
-
-
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        Set<TreeNode> visitedNodes = new HashSet<>();
 
-        if (root == null) return null;
+        if (root == null) return result;
+        stack.push(root);
 
-        //quando arvore acaba? node nao tem mais filhos
-
-        // enquanto node.left != null: currentNode = curentNode.left
-        // if currentNode.lef == null: add currentNode on list
-        // if currentNode.right != null: add currentNode.right on list
-
-        return list;
-
+        while (!stack.isEmpty()) {
+            TreeNode currentNode = stack.pop();
+            if (visitedNodes.contains(currentNode)) {
+                result.add(currentNode.val);
+            } else {
+                visitedNodes.add(currentNode);
+                if (currentNode.right != null) stack.push(currentNode.right);
+                stack.push(currentNode);
+                if (currentNode.left != null) stack.push(currentNode.left);
+            }
+        }
+        return result;
     }
 }
