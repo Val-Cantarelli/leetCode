@@ -7,9 +7,9 @@ public class DeleteDuplicationAlt {
         if (head == null) return null;
         ListNode currentNode = head;
 
-        while(currentNode != null) {
+        while (currentNode != null) {
             // enquanto o prox existeir e for igual ao current: anda
-            while(currentNode.next != null && currentNode.val == currentNode.next.val){
+            while (currentNode.next != null && currentNode.val == currentNode.next.val) {
                 //remove
                 currentNode.next = currentNode.next.next;
             }
