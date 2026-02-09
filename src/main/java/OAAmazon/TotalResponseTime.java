@@ -17,6 +17,7 @@ class TotalResponseTime {
         boolean[] active = new boolean[responseTimes.size()];
 
         for (int i = 0; i < responseTimes.size(); i++) {
+
             int latency = responseTimes.get(i);
             mapa.computeIfAbsent(latency, x -> new ArrayDeque<>()).add(i);
             pq.add(latency);

@@ -22,7 +22,7 @@ public class IsValid {
                         || (c == ')' && st != '(' )) return false;
             }
         }
-        // If dont have more s and we still have stack: false
+        // At the endo of s, if we still do have stack items: false
         return stack.isEmpty();
     }
 
