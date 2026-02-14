@@ -3,29 +3,29 @@ package prepInterviewOA;
 import leetCode.ListNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-public class GetIntersecctionNodeTest {
+public abstract class BaseIntersectionSolverTest {
 
-    private GetIntersecctionNode solver;
+    protected IntersectionSolver solver;
+
+    protected abstract IntersectionSolver createSolver();
 
     @BeforeEach
     void setUp() {
-        solver = new GetIntersecctionNode();
+        solver = createSolver();
     }
 
     @Test
     void testBasicIntersection() {
-
         ListNode common = new ListNode(8);
         common.next = new ListNode(4);
         common.next.next = new ListNode(5);
 
-
         ListNode headA = new ListNode(4);
         headA.next = new ListNode(1);
         headA.next.next = common;
-
 
         ListNode headB = new ListNode(5);
         headB.next = new ListNode(6);
@@ -40,14 +40,12 @@ public class GetIntersecctionNodeTest {
 
     @Test
     void testNoIntersection() {
-
         ListNode headA = new ListNode(2);
         headA.next = new ListNode(6);
         headA.next.next = new ListNode(4);
         ListNode headB = new ListNode(1);
         headB.next = new ListNode(5);
 
-        // Intersection not found
         ListNode result = solver.getIntersectionNode(headA, headB);
         assertNull(result);
     }
@@ -58,7 +56,6 @@ public class GetIntersecctionNodeTest {
 
         ListNode headA = common;
         ListNode headB = common;
-
 
         ListNode result = solver.getIntersectionNode(headA, headB);
         assertEquals(common, result);
