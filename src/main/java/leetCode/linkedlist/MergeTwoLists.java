@@ -1,4 +1,4 @@
-package prepInterviewOA;
+package leetCode.linkedlist;
 
 import leetCode.ListNode;
 
