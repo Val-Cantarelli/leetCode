@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public abstract class BaseIntersectionSolverTest {
 
     protected IntersectionSolver solver;
-
     protected abstract IntersectionSolver createSolver();
 
     @BeforeEach
