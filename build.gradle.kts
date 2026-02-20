@@ -1,3 +1,6 @@
+import org.gradle.jvm.toolchain.JvmVendorSpec
+import org.gradle.jvm.toolchain.JavaLanguageVersion
+
 plugins {
     id("java")
 }
@@ -15,6 +18,11 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(25))
+    }
+}
 tasks.test {
     useJUnitPlatform()
 }
