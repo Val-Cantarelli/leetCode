@@ -1,7 +1,7 @@
 package prepInterviewOA;
 // EASY - AMAZON LeetCode
 /*First: dumb way
-public class TwoSum {
+public class TwoSumBruteForce {
     public int [] twoSum(int []nums, int target){
 
         for(int i = 0; i < nums.length; i ++){

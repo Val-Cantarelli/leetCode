@@ -1,4 +1,4 @@
-package leetCode.arrays;
+package leetCode.hashing;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +10,6 @@ public class TwoSum {
             if(map.containsKey(complement)) return new int[]{map.get(complement), indexNums};
             map.put(nums[indexNums], indexNums);
         }
-
         throw new IllegalStateException("No solution");
     }
 }

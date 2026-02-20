@@ -1,15 +1,11 @@
-package leetCode;
+package leetCode.hashing;
 
-public class TwoSum {
+public class TwoSumBruteForce {
     public int[] twoSum(int[] nums, int target) {
-        int j = 0;
-        while(j < nums.length){
-            for(int i = j+1; i < nums.length; i++){
-                if(nums[j] + nums[i] == target) return new int[] { i, j };
+        for (int indexNum = 0; indexNum < nums.length ; indexNum++) {
+            for (int indexComplement = indexNum+1; indexComplement < nums.length; indexComplement++) {
+                if(nums[indexNum] + nums[indexComplement] == target) return new int[]{indexNum,indexComplement};
             }
-            j++;
-        }
-        return new int[] {};
+        }throw new IllegalStateException("No solution");
     }
-
 }
