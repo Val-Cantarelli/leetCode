@@ -6,9 +6,9 @@ Goal: practice core patterns (arrays, strings, hash map, two pointers, linked li
 
 ## Week 1 – Kickoff (Feb 20, 2026)
 
-| Date       | Day    | Problem                             | Link                                                 | Topic                    | Notes |
-|-----------|--------|--------------------------------------|------------------------------------------------------|--------------------------|-------|
-| 2026-02-20| Friday | Two Sum                             | https://leetcode.com/problems/two-sum/               | Array / HashMap (classic)|       |
+| Date       | Day    | Problem                             | Link                                                 | Topic                    | Notes                                                                                                           |
+|-----------|--------|--------------------------------------|------------------------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
+| 2026-02-20| Friday | Two Sum                             | https://leetcode.com/problems/two-sum/               | Array / HashMap (classic)| - Brute force: test all pairs → O(n²) <br/>- Hashing Map:trade O(n) space for O(1) average complement lookup → O(n) time|
 
 ---
 
