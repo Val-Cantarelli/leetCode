@@ -15,21 +15,7 @@ Core topics:
 
 ---
 
-## Study rules
 
-- Default pace: **2 problems per weekday**
-- If a week gets heavy, do **1 problem + 1 review** instead of forcing 2
-- Every study week should include:
-  - **1 review/refactor day**
-  - **1 lighter day** when needed
-- For each problem, log:
-  - pattern used
-  - brute-force idea
-  - final approach
-  - time/space complexity
-  - main mistake or insight
-
----
 
 ## Week 1 – Kickoff + catch-up (Feb 20, 2026 / Mar 6–13, 2026)
 
