@@ -12,7 +12,7 @@ class AddTwoNumbersTest {
         ListNode l1 = list(2, 4, 3); // 342
         ListNode l2 = list(5, 6, 4); // 465
 
-        ListNode result = AddTwoNumbers.addTwoNumbers(l1, l2);
+        ListNode result = AddTwoNumberIterative.addTwoNumbers(l1, l2);
 
         assertArrayEquals(new int[]{7, 0, 8}, toArray(result)); // 807
     }
@@ -22,7 +22,7 @@ class AddTwoNumbersTest {
         ListNode l1 = list(9, 9, 9, 9, 9, 9, 9);
         ListNode l2 = list(9, 9, 9, 9);
 
-        ListNode result = AddTwoNumbers.addTwoNumbers(l1, l2);
+        ListNode result = AddTwoNumberIterative.addTwoNumbers(l1, l2);
 
         assertArrayEquals(new int[]{8, 9, 9, 9, 0, 0, 0, 1}, toArray(result));
     }
@@ -32,7 +32,7 @@ class AddTwoNumbersTest {
         ListNode l1 = list(9);
         ListNode l2 = list(1);
 
-        ListNode result = AddTwoNumbers.addTwoNumbers(l1, l2);
+        ListNode result = AddTwoNumberIterative.addTwoNumbers(l1, l2);
 
         assertArrayEquals(new int[]{0, 1}, toArray(result));
     }
@@ -42,7 +42,7 @@ class AddTwoNumbersTest {
         ListNode l1 = list(0);
         ListNode l2 = list(0);
 
-        ListNode result = AddTwoNumbers.addTwoNumbers(l1, l2);
+        ListNode result = AddTwoNumberIterative.addTwoNumbers(l1, l2);
 
         assertArrayEquals(new int[]{0}, toArray(result));
     }
