@@ -16,7 +16,7 @@ import leetCode.TreeNode;
  * Data Structure:
  * - Stack (Deque<TreeNode>)
  * Core Invariant:
- * - The stack contains nodes discovered but not fully processed yet.
+ * - The stack contains only nodes not processed
  * Complexity:
  * - Time: O(n)
  * - Space: O(h) average, O(n) worst case
