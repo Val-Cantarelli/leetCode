@@ -1,16 +1,15 @@
 package neetCode150;
 
 import org.junit.jupiter.api.Test;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class TopKFrequentPQTest {
+class TopKFrequentBucketsTest {
 
     @Test
     void returnsTopKFrequentElements() {
-        TopKFrequentPQ solution = new TopKFrequentPQ();
+        TopKFrequentBuckets solution = new TopKFrequentBuckets();
         int[] nums = {1, 1, 1, 2, 2, 3};
         int k = 2;
 
@@ -24,14 +23,14 @@ class TopKFrequentPQTest {
     }
 
     @Test
-    void handlesSingleElement() {
-        TopKFrequentPQ solution = new TopKFrequentPQ();
-        int[] nums = {1};
+    void handlesAllSameElement() {
+        TopKFrequentBuckets solution = new TopKFrequentBuckets();
+        int[] nums = {5, 5, 5, 5};
         int k = 1;
 
         int[] result = solution.topKFrequent(nums, k);
 
         assertEquals(1, result.length);
-        assertEquals(1, result[0]);
+        assertEquals(5, result[0]);
     }
 }
