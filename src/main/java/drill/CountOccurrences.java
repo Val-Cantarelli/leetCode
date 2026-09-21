@@ -9,7 +9,6 @@ public class CountOccurrences {
         if(nums[index] == target){
             return helperCount(nums,target,index+1) +1;
         }
-        // do nothing
         return helperCount(nums,target,index+1);
 
     }
