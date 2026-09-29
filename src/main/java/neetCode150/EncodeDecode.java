@@ -15,6 +15,7 @@ public class EncodeDecode {
     }
     public List<String> decode(String str) {
         List<String> outputDecoded = new ArrayList<>();
+
         String sizeWord = "";
         int i =0;
         while(i != str.length()){
